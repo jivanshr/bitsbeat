@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BitsBeat</title>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+	<style type="text/css">
+		
+* { margin:0; padding:0; }
+
+ .letter { display: none; }
+
+.centered { position: fixed; top:50%; left:50%;
+
+-webkit-transform:scale(2) translate(-50%,-50%);
+-ms-transform: scale(2) translate(-50%,-50%);
+-o-transform: scale(2) translate(-50%,-50%);
+transform: scale(2) translate(-50%,-50%); }
+
+.colorLogos {width: 1095px;  position: fixed; left:50%; top:50%;  
+	text-align: center; display: none;
+
+-webkit-transform:translate(-50%,-50%);
+-ms-transform: translate(-50%,-50%);
+-o-transform: translate(-50%,-50%);
+transform: translate(-50%,-50%); 
+
+
+ }
+
+ button { background:none; outline:0; border:2px solid #000; padding:10px 20px;
+border-radius:0;
+ font-size:16px; letter-spacing:1px; text-transform: uppercase;  font-family: sans-serif; margin-top:50px; transition:all .2s ease-in-out; }
+
+ button:hover { cursor: pointer; letter-spacing:2px; }
+
+.circle { transform: scale(0); transition: all .2s ease-in-out; position: absolute; left:-42px; top:-35px; }
+
+.circle.show { transform: scale(1);}
+
+
+.letter { position: relative; z-index:100; }
+.letter.white path { fill:white;  }
+
+
+
+.blink { -webkit-animation:blink .5s 0s infinite;
+-o-animation:blink .5s 0s infinite;
+animation:blink .5s 0s infinite; }
+
+.hide { display: none; }
+.show { display: block; }
+.colorLogos {  }
+.colorLogos  img { float: left; opacity: 0; transform: scale(0.5); transition: all .3s ease-in-out; }
+.colorLogos.show img { opacity: 1;transform: scale(1);  }
+
+
+@keyframes blink {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+	</style>
+
+
+	<script type="text/javascript">
+		
+$(document).ready(function(){
+
+
+setTimeout(function(){
+        $('.circle').addClass("show");
+        $('.letter1, .letter2, .letter3, .letter4').addClass("white");
+        $('svg').removeClass("blink");
+    },2000);
+
+
+setTimeout(function(){
+        $('.centered').fadeOut();
+    },5000);
+
+setTimeout(function(){
+        $('.colorLogos').fadeIn().addClass("show");
+
+    },6000);
+
+
+
+
+setTimeout(function(){
+        $('.letter1').show();
+    },1000);
+
+
+setTimeout(function(){
+        $('.letter2').show();
+    },1200);
+
+
+setTimeout(function(){
+        $('.letter3').show();
+    },1300);
+
+
+
+setTimeout(function(){
+        $('.letter4').show();
+    },1400);
+
+
+
+setTimeout(function(){
+        $('.letter5').show();
+    },1500);
+
+
+
+setTimeout(function(){
+        $('.letter6').show();
+    },1600);
+
+
+setTimeout(function(){
+        $('.letter7').show();
+    },1700);
+
+
+setTimeout(function(){
+        $('.letter8').show();
+    },1800);
+
+
+setTimeout(function(){
+        $('.letter9').show();
+    },1900);
+
+});
+
+
+
+
+	</script>
+
+</head>
+
+<body>
+
+
+<div class="colorLogos">
+
+<div class="colorLogos-img">
+<img src="logo_green.png"/>
+<img src="logo_yello.png"/>
+<img src="logo_red.png"/>
+<img src="logo_orange.png"/>
+<img src="logo_blue.png"/>
+<img src="logo_teal.png"/>
+</div>
+
+
+<button class="replay" onclick="location.reload();">Replay</button>
+
+</div>
+
+<div class="centered">
+
+<svg  class="circle" width="108px" height="108px" viewBox="0 0 108 108" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="on-white" transform="translate(-74.000000, -59.000000)" fill="#000000">
+            <g id="logo" transform="translate(74.000000, 59.000000)">
+                <circle id="circle" cx="54" cy="54" r="54"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
+
+
+<svg class="letter letter1" width="21px" height="30px" viewBox="0 0 21 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="on-white" transform="translate(-121.000000, -90.000000)" fill="#000000">
+            <g id="logo" transform="translate(74.000000, 59.000000)">
+                <path d="M52.4204061,59.9397295 L47.3157895,59.9397295 L47.3157895,31.6271638 L52.4995474,31.6271638 L52.4995474,42.8114093 C53.3701022,41.442708 55.5069184,40.1913238 58.3955774,40.1913238 C64.093754,40.1913238 67.3781197,44.5320625 67.3781197,50.2415026 C67.3781197,56.0682599 63.737618,60.4089985 58.197724,60.4089985 C55.5069184,60.4089985 53.4492435,59.2358259 52.4204061,57.5933843 L52.4204061,59.9397295 Z M62.1152205,50.2806083 C62.1152205,46.7610905 59.9784042,44.8449085 57.2875986,44.8449085 C54.6363636,44.8449085 52.4204061,46.7610905 52.4204061,50.2806083 C52.4204061,53.7610204 54.6363636,55.7554138 57.2875986,55.7554138 C59.9784042,55.7554138 62.1152205,53.8001261 62.1152205,50.2806083 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+
+
+
+<svg class="letter letter2" width="8px" height="29px" viewBox="0 0 8 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="on-white" transform="translate(-144.000000, -90.000000)" fill="#000">
+            <g id="logo" transform="translate(74.000000, 59.000000)">
+                <path d="M76.7959395,59.9397295 L71.5330402,59.9397295 L71.5330402,40.6996986 L76.7959395,40.6996986 L76.7959395,59.9397295 Z M70.8999095,34.4036723 C70.8999095,32.6048076 72.3640243,31.1578947 74.1447045,31.1578947 C75.9649554,31.1578947 77.3894995,32.6048076 77.3894995,34.4036723 C77.3894995,36.1243255 75.9649554,37.5712383 74.1447045,37.5712383 C72.3640243,37.5712383 70.8999095,36.1243255 70.8999095,34.4036723 Z" id="i"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+
+
+<svg class="letter letter3" width="13px" height="27px" viewBox="0 0 13 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g  stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g  transform="translate(-154.000000, -93.000000)" fill="#000000">
+            <g  transform="translate(74.000000, 59.000000)">
+                <path fill="#000000" d="M88.9045649,34.9511528 L84.1560843,34.9511528 L84.1560843,37.6494499 C84.1560843,39.370103 83.2063882,40.6996986 81.1487133,40.6996986 L80.1594465,40.6996986 L80.1594465,45.3141776 L83.6812363,45.3141776 L83.6812363,54.2693952 C83.6812363,57.9844418 86.0554765,60.2134698 89.854261,60.2134698 C91.3975171,60.2134698 92.3472132,59.9397295 92.8220613,59.7442007 L92.8220613,55.4425678 C92.5450666,55.5207793 91.8327945,55.5989908 91.1996638,55.5989908 C89.6959783,55.5989908 88.9045649,55.0515103 88.9045649,53.3699629 L88.9045649,45.3141776 L92.8220613,45.3141776 L92.8220613,40.6996986 L88.9045649,40.6996986 L88.9045649,34.9511528 Z" id="bits"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+
+<svg class="letter letter4" width="16px" height="21px" viewBox="0 0 16 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="on-white" transform="translate(-170.000000, -99.000000)" fill="#000">
+            <g id="logo" transform="translate(74.000000, 59.000000)">
+                <path d="M96.0668563,54.5822412 C96.3042804,56.7721634 98.3223846,60.5263158 104.178844,60.5263158 C109.28346,60.5263158 111.736842,57.319644 111.736842,54.1911837 C111.736842,51.3755694 109.797879,49.0683299 105.959524,48.2862149 L103.189577,47.6996286 C102.121169,47.5040998 101.408897,46.9175135 101.408897,45.9789754 C101.408897,44.8840143 102.516876,44.0627935 103.901849,44.0627935 C106.117807,44.0627935 106.948791,45.5097064 107.107074,46.6437732 L111.499418,45.6661294 C111.261994,43.5935244 109.402173,40.1131123 103.862279,40.1131123 C99.6677874,40.1131123 96.5812751,42.9678324 96.5812751,46.4091387 C96.5812751,49.1074357 98.2828139,51.3364637 102.042028,52.1576845 L104.614121,52.7442708 C106.117807,53.0571168 106.711367,53.7610204 106.711367,54.621347 C106.711367,55.6380966 105.880383,56.5375289 104.139273,56.5375289 C101.844174,56.5375289 100.696625,55.1297218 100.577913,53.6045974 L96.0668563,54.5822412 Z" id="bits"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+
+
+
+
+<svg class="letter letter5" width="21px" height="30px" viewBox="0 0 21 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="on-white" transform="translate(-189.000000, -91.000000)" fill="#000000">
+            <g id="logo" transform="translate(74.000000, 59.000000)">
+                <path d="M120.654365,60.9770013 L115.526316,60.9770013 L115.526316,32.1578947 L120.73387,32.1578947 L120.73387,43.5422379 C121.608421,42.1490491 123.755046,40.8752764 126.656966,40.8752764 C132.3813,40.8752764 135.680743,45.2936754 135.680743,51.1052632 C135.680743,57.0362671 132.023529,61.4546661 126.458204,61.4546661 C123.755046,61.4546661 121.687926,60.2605042 120.654365,58.5886776 L120.654365,60.9770013 Z M130.393684,51.1450686 C130.393684,47.5625829 128.247059,45.6121185 125.543901,45.6121185 C122.880495,45.6121185 120.654365,47.5625829 120.654365,51.1450686 C120.654365,54.6877488 122.880495,56.717824 125.543901,56.717824 C128.247059,56.717824 130.393684,54.7275542 130.393684,51.1450686 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+
+
+<svg class="letter letter6" width="20px" height="22px" viewBox="0 0 20 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="on-white" transform="translate(-212.000000, -99.000000)" fill="#000000">
+            <g id="logo" transform="translate(74.000000, 59.000000)">
+                <path d="M143.710712,48.9557718 L152.456223,48.9557718 C152.376718,47.0053074 151.104644,45.0946484 148.083467,45.0946484 C145.340557,45.0946484 143.829969,47.164529 143.710712,48.9557718 Z M152.973003,54.0508625 L157.385511,55.3644405 C156.391703,58.7478992 153.291022,61.5740823 148.480991,61.5740823 C143.114427,61.5740823 138.383901,57.7129589 138.383901,51.1052632 C138.383901,44.855816 142.99517,40.7956656 148.003963,40.7956656 C154.046316,40.7956656 157.663777,44.656789 157.663777,50.9460416 C157.663777,51.7023441 157.584272,52.498452 157.584272,52.5780628 L143.591455,52.5780628 C143.710712,55.1654135 145.89709,57.0362671 148.520743,57.0362671 C150.985387,57.0362671 152.336966,55.8022999 152.973003,54.0508625 Z" id="beat_"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+
+
+
+
+<svg class="letter letter7" width="19px" height="22px" viewBox="0 0 19 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="on-white" transform="translate(-234.000000, -99.000000)" fill="#000000">
+            <g id="logo" transform="translate(74.000000, 59.000000)">
+                <path d="M160.645201,55.6430783 C160.645201,52.1402034 163.229102,50.1897391 166.488793,49.7120743 L171.298824,48.9955772 C172.411889,48.8363556 172.769659,48.2790801 172.769659,47.6023883 C172.769659,46.2091995 171.696347,45.054843 169.470217,45.054843 C167.164582,45.054843 165.892508,46.5276426 165.733498,48.2392747 L161.042724,47.2441398 C161.360743,44.1791243 164.183158,40.7956656 169.430464,40.7956656 C175.631827,40.7956656 177.937461,44.2985405 177.937461,48.2392747 L177.937461,57.8721805 C177.937461,58.9071207 178.056718,60.3003096 178.175975,60.9770013 L173.326192,60.9770013 C173.206935,60.4595312 173.12743,59.3847855 173.12743,58.628483 C172.133622,60.1808934 170.265263,61.5342769 167.363344,61.5342769 C163.18935,61.5342769 160.645201,58.7080938 160.645201,55.6430783 Z M168.476409,57.5935427 C170.702539,57.5935427 172.769659,56.518797 172.769659,53.0557276 L172.769659,52.1800088 L168.357152,52.8567006 C167.005573,53.0557276 165.93226,53.8120301 165.93226,55.3246351 C165.93226,56.4789916 166.767059,57.5935427 168.476409,57.5935427 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+
+
+
+<svg class="letter letter8" width="14px" height="27px" viewBox="0 0 14 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="on-white" transform="translate(-254.000000, -94.000000)" fill="#000000">
+            <g id="logo" transform="translate(74.000000, 59.000000)">
+                <path d="M189.664396,35.5413534 L184.894118,35.5413534 L184.894118,38.2879257 C184.894118,40.0393631 183.940062,41.3927466 181.872941,41.3927466 L180.879133,41.3927466 L180.879133,46.0897833 L184.41709,46.0897833 L184.41709,55.2052189 C184.41709,58.9867315 186.802229,61.2556391 190.618452,61.2556391 C192.168793,61.2556391 193.122848,60.9770013 193.599876,60.7779743 L193.599876,56.3993808 C193.32161,56.4789916 192.606068,56.5586024 191.970031,56.5586024 C190.459443,56.5586024 189.664396,56.0013268 189.664396,54.2896948 L189.664396,46.0897833 L193.599876,46.0897833 L193.599876,41.3927466 L189.664396,41.3927466 L189.664396,35.5413534 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+
+
+
+
+<svg class="blink" width="21px" height="6px" viewBox="0 0 21 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="on-white" transform="translate(-270.000000, -119.000000)" fill="#000000">
+            <g id="logo" transform="translate(74.000000, 59.000000)">
+                <polygon  id="underscore" points="216.894737 65.3157895 216.894737 60.9770013 196.5813 60.9770013 196.5813 65.3157895"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
+
+
+</div>
+
+
+
+
+</div>
+</body>
+</html>
